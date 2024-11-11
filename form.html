@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="format2.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Get in Touch</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" min="18" max="99" required>
+            </div>
+            <div class="form-group">
+                <label>Programming Languages:</label>
+                <div class="checkbox-group">
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="python" name="languages[]" value="python">
+                        <label for="python">Python</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="javascript" name="languages[]" value="javascript">
+                        <label for="javascript">JavaScript</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="java" name="languages[]" value="java">
+                        <label for="java">Java</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="csharp" name="languages[]" value="csharp">
+                        <label for="csharp">C#</label>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
